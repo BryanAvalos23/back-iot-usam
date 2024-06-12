@@ -31,9 +31,10 @@ class AccessDataFromAzure():
         try:
           json_obj = json.loads(json_str)
           json_list.append(json_obj)
+          
         except Exception as e:
           pass
-
+      
       return jsonify(json_list)
     
     except ResourceNotFoundError as e:
