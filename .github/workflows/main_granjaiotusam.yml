@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - API-granja
+name: Build and deploy Python app to Azure Web App - granjaiotusam
 
 on:
   push:
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_12AD24A4F35F4388B2CC7436D1360296 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0D5AFF2085924D3C9D6F529C028405A9 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D36C27F51783421AA1F7DD205BB979FA }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0FDFF97DB4C847C095F825E64F24EB76 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3DDADA65E20D4A5C9F9665EA7DE75E21 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_7C49D91969D64591BD8BA8BC87E0BCF1 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'API-granja'
+          app-name: 'granjaiotusam'
           slot-name: 'Production'
           
