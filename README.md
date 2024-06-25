@@ -1,2 +1,2 @@
 # back-iot-usam
-## hola
+## API del proyecto de investigacion de la universidad alberto masferrer.
