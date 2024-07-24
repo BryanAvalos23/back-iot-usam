@@ -70,7 +70,7 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2091E68873734A03B6BAF727C033E586 }}
 
       - name: Add delay before deployment
-      run: sleep 30
+        run: sleep 30
       
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
